@@ -4,10 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
 I am a recent college graduate from Vassar college with a BA in both philosophy and economics. I enjoy working with empirical data, and extracting insights from them for practical business applications. Outside of work, I enjoy rock climbing as much as bees enjoy their honey.
 
 ### Contact me

@@ -3,7 +3,7 @@ layout: post
 title: MTA Turnstile Data Project
 ---
 
-For this week's Metis project, our team received a letter from WTWY (Women Tech Women Yes) with a request for us to leverage the MTA turnstile data in NYC to determine a list of optimal subway stations form their street team to canvas and fundraise at for their upcoming gala event.
+For this week's Metis project, our team received a hypothetical letter from WTWY (Women Tech Women Yes) with a request for us to leverage the MTA turnstile data in NYC to determine a list of optimal subway stations form their street team to canvas and fundraise at for their upcoming gala event.
 
 The data which is available freely online [MTA turnstile data](http://web.mta.info/developers/turnstile.html#main-content) consists of the cumulative number of entries and exits for each turnstile in a respective subway station up to a given date and time.
 

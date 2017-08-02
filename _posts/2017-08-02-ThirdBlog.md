@@ -71,15 +71,15 @@ need is to create derive some variables that capture a person’s ability to pay
 Here are my attempts:
 Let us define the gap as the difference between what a person pay and their bill:
 
-$$gap_{i} = bill_amt_{i} – pay_amt_{i}$$
+$$gap_{i} = billAmt_{i} – payAmt_{i}$$
 
-$$gap_{mean} = 1/n * sum_{i=0}^n gap_{i}$$
+$$gap_{mean} = \frac{1}{n} * \sum_{i=0}^n gap_{i}$$
 
-$$gap_{std} = 1/(n-1) sum_{i=0}^n (gap_{i} – gap_{mean})^2$$
+$$gap_{std} = \sqrt{\sum_{i=0}^n frac{(gap_{i} – gap_{mean})^2}{n-1}}$$
 
 The $$gap_{mean}$$ is an average measure of how much unpaid leftover a person carries over each month. The $$gap_{std}$$ 
 measures how consistent a person was paying relatively to his bill each period. Lastly I want to add another binary variable 
-*$$late_sudden_large_gap$$* indicating when:
+$$lateSuddenLargeGap$$ indicating when:
 
 -	A person possess gaps in this 6-months period that is 0.7 standard deviation above their gap mean  
 AND  

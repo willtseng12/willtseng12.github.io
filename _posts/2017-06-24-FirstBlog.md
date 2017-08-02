@@ -17,7 +17,7 @@ To calculate the individual z-scores of a specfic criteria:
 $$ z_{i} = \frac{x - \mu}{\sigma}$$  
 
 To weigh the composite z_score for each station, we followed the ratio:  
-$$z_{composite} = (0.6)z_{traffic} + (0.2)z_{property} + (0.2)z_{income}$$  
+$$z_{composite} = (0.6) z_{traffic} + (0.2) z_{property} + (0.2) z_{income}$$  
 
 This is a map of the location that topped our list in the property value category, entry volume category, and both:  
 

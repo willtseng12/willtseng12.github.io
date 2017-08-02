@@ -3,15 +3,17 @@ layout: post
 title: Credit Card Default Project
 ---
 
-After the successful conclusion of my previous __movie data project__, for the past two and a half weeks, 
+After the successful conclusion of my previous [movie data project](https://willtseng12.github.io/SecondBlog/), 
+for the past two and a half weeks, 
 I have been working on another data science project where I am looking at credit card client payment status, 
 history, and default outcomes in Taiwan from April 2005 to September 2005, predicting whether they were 
 eventually going to default their loans on the following month, October 2005. The purpose of the project was to 
 tie in the theories we learned on classification learning algorithms with potentially practical areas of 
 application. Moreover, it was also an opportunity for us to familiarize ourselves with the Amazon Web Service 
-(AWS) platform, especially with their __EC2__ service, and PostgreSql database for data storage and access.
+(AWS) platform, especially with their [EC2](https://aws.amazon.com/ec2/) service, and PostgreSql database for 
+data storage and access.
 
-The data is available on the UCI machine learning repository __here__. Luckily there was only a minimal amount of 
+The data is available on the UCI machine learning repository [here](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients). Luckily there was only a minimal amount of 
 cleaning that was required before it was modeling ready. I read the data from my AWS into Jupyter Notebook 
 through sqlalchemy. I did some exploratory data analysis to take a first look at how different features might 
 be potentially related to each other and the binary target variable, default.  Three specific features stood 
@@ -50,9 +52,7 @@ were late in this 6-month period. Here are the result comparison:
 Notice that in order for these metrics to make sense, we must compare them to a baseline model. In this case, 22% of entire 
 dataset are default outcomes, then we can state that our baseline model has an accuracy score of around 22% if we predict 
 everyone to default. Therefore, we can see in these metrics that our accuracy score increase by much across all models. 
-However, what we are even more interested here are the __recall__ scores. Intuitively, the recall indicates the percentage of 
-defaults in our sample we were able to capture with our model while the __precision__ indicates among those we predicted to 
-default, how many actually did. Therefore, there is a tradeoff between the two scores in general: being stricter on catching 
+However, what we are even more interested here are the [recall](https://en.wikipedia.org/wiki/Precision_and_recall). Intuitively, the recall indicates the percentage of defaults in our sample we were able to capture with our model while the [precision](https://en.wikipedia.org/wiki/Precision_and_recall) indicates among those we predicted to default, how many actually did. Therefore, there is a tradeoff between the two scores in general: being stricter on catching 
 defaults will naturally make you catch more non-defaulters as well.  Now for the purpose of this project, I considered recall 
 to be a slightly more important metric to pay attention to, although in the real world there is usually an objective function 
 that allows data scientist to find an optimal tradeoff point between these metrics.
@@ -79,10 +79,9 @@ $gap_{std} = \sqrt{\sum_{i=0}^n \frac{(gap_{i} – gap_{mean})^2}{n-1}}$
 
 The $$gap_{mean}$$ is an average measure of how much unpaid leftover a person carries over each month. The $$gap_{std}$$ 
 measures how consistent a person was paying relatively to his bill each period. Lastly I want to add another binary variable 
-$$lateSuddenLargeGap$$ indicating when:
+$$lateSuddenLargeGap$$ indicating 2 conditions when:
 
--	A person possess gaps in this 6-months period that is 0.7 standard deviation above their gap mean  
-AND  
+-	The person possesses gaps in this 6-months period that is 0.7 standard deviation above their gap mean  
 - The person has been late for the final 2-months of the period (August, September)
 
 The 0.7 standard deviation and months chosen are arbitrary thresholds; but, the point here is to create a feature that 

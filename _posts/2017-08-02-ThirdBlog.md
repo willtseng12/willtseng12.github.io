@@ -98,7 +98,7 @@ As you can see, our recalls have increased compared to the first model, some mor
 see, the bootstrapped decision tree is still coming out as the classifier catching the most default in the data set at around 
 70% (recall). So depending on firm’s strategy, decision tree is definitely a more aggressive classifier compare to other more 
 moderate ones. Therefore, if a firm is worried about under extending loans to these false positive predictions from decision 
-tree, it may be better for them to take adopt a more balance model such as the Support Vector Machine (SVM) that has a more 
+tree, it may be better for them to adopt a less agressive model such as the Support Vector Machine (SVM) that has a more 
 balanced precision to recall score, catching less defaults but also not predicting too much false positives.
 
 This tradeoff among the models can be seen in the following ROC curve:
@@ -115,7 +115,9 @@ pay off large bills consistently throughout the period of evaluation. But even b
 will provide a more holistic picture of your client’s situation, really allowing decision makers to optimize their lending 
 decisions. 
 
-I found this project to be challenging yet rewarding at the same time. A lot of thoughts went into extracting features through 
-exploratory data analysis. Model selection and parameter turning were crucial parts of it as well. Some have asked me why I 
-did not try random forest. The answer is that I have, but the classifier had somehow not performed better than 
-bootstrap aggregating my decision tree, so I did not include it in my report.
+I found this project to be a rewarding opportunity to familiarze myself with classifier alogirthms. A lot of thoughts went
+into extracting features through exploratory data analysis. Model selection and parameter turning were crucial parts of it as
+well. Some have asked me why I did not try random forest. The answer is that I have, but the classifier had somehow not
+performed better than bootstrap aggregating my decision tree, so I did not include it in my report.
+
+You can see my technical implementations [here]()

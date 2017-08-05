@@ -21,13 +21,14 @@ out to me at first sight. The first one being education, as we can see in the gr
 people who have higher education is associated with a lower probability of default as they are in general more 
 likely to earn more than someone with a high school degree
 
-[bar chart]
+![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog3_images/education_default.png)
 
 Aside from the education status, a person’s credit limit balance also stood out to be important. People who have 
 higher credit limit balance usually indicates that they are either financially affluent or have proven themselves 
 credit worthy through their past payment history.
 
-[graph]
+
+![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog3_images/limit_bal_default.png)
 
 In this graph we have on the x-axis the standardized credit limit balance and y-axis whether a person has defaulted or 
 not (indicated by 0 and 1). One can see that for credit balance more than 1 standard deviation above the mean, there 
@@ -35,7 +36,7 @@ are correspondingly fewer defaults, so it might be a good idea to include it in 
 to take a look at an individual’s payment status in the past 6-months.  I calculated the default rate of each payment 
 status for each month. The I took the average of each status and this was the result:
 
-[bar chart]
+![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog3_images/lateness_default.png)
 
 We can see that for any given month, if you are 1 month late on payment there is around a 33% chance of defaulting at the 
 end of the entire period you are taking the average of. What is interesting is that this number climbs significantly after 
@@ -47,7 +48,7 @@ Now that I have a set of believably important features, I ran different models w
 (standardizing the continuous one): credit limit balance, whether a person had a graduate degree, and number of times they 
 were late in this 6-month period. Here are the result comparison:
 
-[table]
+![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog3_images/result1.png)
 
 Notice that in order for these metrics to make sense, we must compare them to a baseline model. In this case, 22% of entire 
 dataset are default outcomes, then we can state that our baseline model has an accuracy score of around 22% if we predict 
@@ -91,7 +92,7 @@ trying to gauge a person’s ability to pay.
 
 After putting these new variables into our models, here was the results:
 
-[table]
+![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog3_images/result2.png)
 
 As you can see, our recalls have increased compared to the first model, some more significantly than the others. As one can 
 see, the bootstrapped decision tree is still coming out as the classifier catching the most default in the data set at around 
@@ -102,7 +103,7 @@ balanced precision to recall score, catching less defaults but also not predicti
 
 This tradeoff among the models can be seen in the following ROC curve:
 
-[graph]
+![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog3_images/roc.png)
 
 Not surprisingly, our decision tree classifier took a hit in term of its Area Under Curve (AUC) score, but still better than 
 some such as our logistic regression model. On the other hand, SVM came out top followed by KNN and Naïve Bayes. Therefore, 

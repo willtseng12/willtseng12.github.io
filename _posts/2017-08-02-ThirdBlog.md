@@ -5,7 +5,7 @@ title: Credit Card Default Project
 
 After the successful conclusion of my previous [movie data project](https://willtseng12.github.io/SecondBlog/), 
 for the past two and a half weeks, 
-I have been working on another data science project where I am looking at credit card client payment status, 
+I have been working on another data science project where I am looking at credit card clients' payment status, 
 history, and default outcomes in Taiwan from April 2005 to September 2005, predicting whether they were 
 eventually going to default their loans on the following month, October 2005. The purpose of the project was to 
 tie in the theories we learned on classification learning algorithms with potentially practical areas of 
@@ -16,7 +16,8 @@ data storage and access.
 The data is available on the UCI machine learning repository [here](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients). Luckily there was only a minimal amount of 
 cleaning that was required before it was modeling ready. I read the data from my AWS into Jupyter Notebook 
 through sqlalchemy. I did some exploratory data analysis to take a first look at how different features might 
-be potentially related to each other and the binary target variable, default.  Three specific features stood 
+be potentially related to each other and the binary target variable, whether or not they defaulted Oct. 2015.
+Three specific features stood 
 out to me at first sight. The first one being education, as we can see in the graph below that not surprisingly 
 people who have higher education is associated with a lower probability of default as they are in general more 
 likely to earn more than someone with a high school degree

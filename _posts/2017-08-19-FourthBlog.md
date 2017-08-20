@@ -28,42 +28,37 @@ As you can see, one is able to identify certain topics and themes despite some o
 
 <matrix png>
 
-The number of components needs to be manually specified. NMF has been known on average to perform just as well as other topic modeling algorithms; however, when trying to model more and more topics, it can sometimes produce low quality topics with incoherent keyword combinations [Stevens et al., 2012](link). Therefore, through a lot of trial and error and some subjective evaluations, I went with 7 components. After running NMF on articles separated by year of publication date, I begin matching similar topics evaluated by their Jaccard index (link) score through an iterative algorithm, summing the counts of documents in those categories together. For topics that are distinct enough from previous occurring topics (Jaccard index == 0), I created a topic series of their own starting at the given time period they appear, potentially matching it with future similar topics.  
+The number of components needs to be manually specified. NMF has been known on average to perform just as well as other topic modeling algorithms; however, when trying to model more and more topics, it can sometimes produce low quality topics with incoherent keyword combinations [Stevens et al., 2012](http://aclweb.org/anthology/D/D12/D12-1087.pdf). Therefore, through a lot of trial and error and some subjective evaluations, I went with 7 components. After running NMF on articles separated by year of publication date, I begin matching similar topics evaluated by their [Jaccard index](https://en.wikipedia.org/wiki/Jaccard_index) score through an iterative algorithm, summing the counts of documents in those categories together. For topics that are distinct enough from previous occurring topics (Jaccard index == 0), I created a topic series of their own starting at the given time period they appear, potentially matching it with future similar topics.  
 
 
 After the matching process is done, I built a D3 visualization of immigration topic changes and evolution through time:  
 
-
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/topic_distr.png)
-
 
 There was some design choices that went into the construction of this graph both for visuazliation purposes and on a more philosphical level. For topics that did not emerge prior to a given year, I was hesitant to simply give them a count of 0 which would make their emergence look alot less continuous (more like a sudden blob of color popping up or disappearing), giving our eyes a hard time. Secondly on a more philosophical level: a topic hardly ever emerges out of the blue suddenly in time, but is rather always present in some form or another, slowly rising in importance or slowly fading away, but never completely gone once and for all.
 
 The graph still definitely looks a bit too colorful, but let us walk through this graph a step at a time. 
-For the keyword category under terrorism and security, this is what we have:  
-
+For the keyword category under terrorism and security, this is what we have:   
 
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/terror.png)  
 
 One sees that there are two time periods that has much news regarding terrorism and security associated with article searches on immigration, namely the late 90s and early 2000s right after 9/11. One sees that some of the keywords returned by the NMF model are names of extremist leaders.  
 
-Another interesting subtopic is the theme on border and boundary:  
+Another interesting subtopic is the theme on border and boundary:   
   
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/border.png)
 
-If you take a close look at the graph, some notable historical events happened during these time periods. On the very left around 1982 is the Latin American debt crisis where many workers then tried to cross the Mexican American border looking for employment in the US. We then have in 1989 the fall of the Berlin Wall. And finally 1994, the ratification of the NAFTA trade agreement. Now you might wonder with all the talks on TV about Donald Trump building a wall these days and the crisis in the Middle east, how is the frequency immigration news related to this subtopic almost nonexistent. I want to argue that it has not disappeared but simply bled into another adjacent topic: asylum and detainment:  
+If you take a close look at the graph, some notable historical events happened during these time periods. On the very left around 1982 is the Latin American debt crisis where many workers then tried to cross the Mexican American border looking for employment in the US. We then have in 1989 the fall of the Berlin Wall. And finally 1994, the ratification of the NAFTA trade agreement. Now you might wonder with all the talks on TV about Donald Trump building a wall these days and the crisis in the Middle east, how is the frequency immigration news related to this subtopic almost nonexistent. I want to argue that it has not disappeared but simply bled into another adjacent topic: asylum and detainment:   
 
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/detainment.png)
 
 In the asylum and detainment subtopic we also see the keyword “border” appearing but in a slightly different context. While “border” in the previous subtopic had a more economic and historical connotation, it’s connotation in the latter topic is much more relevant to the state of socio-political affairs we are seeing today in 2017. This is confirmed by much more relevant keywords to what is going on recently with all the refugee crises and Donald Trump’s stringent policies against immigrants and travelers to the US. I think this is a good place to emphasize that topics are often times not mutually exclusive and that it is usually as much an art as it is a science to really discern similarities and differences through keywords, leveraging some domain knowledge and interpretational skills to weave a coherent and probable story together.  
 
-What about geographical subtopics outside of the US? We now take a quick peak at Europe:  
+What about geographical subtopics outside of the US? We now take a quick peak at Europe:   
 
-![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/detainment.png)
+![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/foreign.png)
 
-Here we have an example of a re-emerging subtopic. One can see quite some coverage on Europe around the early 90s, most likely regarding to the foudning of the European Union under the Maastricht Treaty that had effects on policies regarding open borders, employment, and migration. The topic subsided only to re-emerge again recently with the refugee and migrant crises in the Mediterranean, Brexit, and the recent French election between Le Pen and Macron in 2017, covering more than 10% of the news distribution.  
-
-Nevertheless, a large sum of NYT’s coverage nowadays regarding immigration has some significant political components:  
+Here we have an example of a re-emerging subtopic. One can see quite some coverage on Europe around the early 90s, most likely regarding to the foudning of the European Union under the Maastricht Treaty that had effects on policies regarding open borders, employment, and migration. The topic subsided only to re-emerge again recently with the refugee and migrant crises in the Mediterranean, Brexit, and the recent French election between Le Pen and Macron in 2017, covering more than 10% of the news distribution. Nevertheless, a large sum of NYT’s coverage nowadays regarding immigration has some significant political components:  
 
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/political.png)
 
@@ -76,15 +71,11 @@ I personally call this the category that encompasses the social responses, educa
 
 The previous graphs seem to be implying that immigration as a topic to consider has become much more political than it was in the past given the change in distribution of the subtopics. It suggests that we currently live in a period where much more is going around us both within the US and outside (as we see in the Europe subtopic). The question is how can we better visualize this increasing complexity in issue surrounding immigration and whether it is truly more complicated nowadays then it was in the past. Below are two word clouds generated from two random documents in my dataset, comparing the keywords emerging from the early 1980s to those in 2017. Let us take a look at the early 1908s first.  
 
-
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/1980_wc.png)
-
 
 Although one can definitely spot the presence of political figures in the word cloud, much of the theme in this text seems to only involved Hispanics. In terms of themes, we see issue regarding rights, representation, education, and solidarity in general. But now if we take a look at another random article in 2017, there seems to be much more going on.  
 
-
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/2017_wc.png)
-
 
 First thing first, one sees the names of recent political candidates, Trump (bottom right), Mike Pence (top right). Next we see keywords on religious groups such as Islam (bottom left) popping up along with extremist group such as ISIS (right above Trump). In terms of countries, there is China (upper right), Baltic (center top). Economic themes such as the market (bottom left corner) all emerge as interconnected issues in this document specifically. It is probably safe to say that issues regarding immigration has definitely become much more complex, interconnected with everything else. Because of its interconnectivity with other important issues, it has naturally been more heavily addressed in the political arena, making it emerge as a very crucial socio-political question that needs to be raised, addressed, and questioned during this time in history.  
 

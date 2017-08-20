@@ -62,27 +62,35 @@ In the asylum and detainment subtopic we also see the keyword “border” appea
 
 What about geographical subtopics outside of the US? We now take a quick peak at Europe:  
 
+
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/detainment.png)
 
 Here we have an example of a re-emerging subtopic. One can see quite some coverage on Europe around the early 90s, most likely regarding to the foudning of the European Union under the Maastricht Treaty that had effects on policies regarding open borders, employment, and migration. The topic subsided only to re-emerge again recently with the refugee and migrant crises in the Mediterranean, Brexit, and the recent French election between Le Pen and Macron in 2017, covering more than 10% of the news distribution.  
 
 Nevertheless, a large sum of NYT’s coverage nowadays regarding immigration has some significant political components:  
 
+
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/political.png)
 
 When I say “political”, what I really mean is party politics, especially during the recent election where immigration to the US is a topic heavily touched upon during the presidential debates along with Donald Trump’s victory. The subtopic account for more than 20% of the news related to immigration keywords, almost twice as much coverage as it had in 1980. This shows that immigration has become much more controversial of an issue in the political arena. However, what is perhaps most interesting for me to see is this next subtopic on immigrant life and education.  
 
+
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/social_response.png)
+
 
 I personally call this the category that encompasses the social responses, education policies, issues related to assimilating to life abroad as an immigrant, raising a family, perhaps even some immigrant’s personal memoire. The distribution of this subtopic has been steadily increasing since 2015. I suspect that in an age where topics such as immigration have been extremely politicized by individuals that may not necessarily have the experience of what it is like being an immigrant, there is perhaps a demand for a voice that resonates with people on a more personal level: articles that speak from the perspective of the immigrants themselves, the lived experience and the challenges regarding it.  
 
 The previous graphs seem to be implying that immigration as a topic to consider has become much more political than it was in the past given the change in distribution of the subtopics. It suggests that we currently live in a period where much more is going around us both within the US and outside (as we see in the Europe subtopic). The question is how can we better visualize this increasing complexity in issue surrounding immigration and whether it is truly more complicated nowadays then it was in the past. Below are two word clouds generated from two random documents in my dataset, comparing the keywords emerging from the early 1980s to those in 2017. Let us take a look at the early 1908s first.  
 
+
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/1980_wc.png)
+
 
 Although one can definitely spot the presence of political figures in the word cloud, much of the theme in this text seems to only involved Hispanics. In terms of themes, we see issue regarding rights, representation, education, and solidarity in general. But now if we take a look at another random article in 2017, there seems to be much more going on.  
 
+
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/2017_wc.png)
+
 
 First thing first, one sees the names of recent political candidates, Trump (bottom right), Mike Pence (top right). Next we see keywords on religious groups such as Islam (bottom left) popping up along with extremist group such as ISIS (right above Trump). In terms of countries, there is China (upper right), Baltic (center top). Economic themes such as the market (bottom left corner) all emerge as interconnected issues in this document specifically. It is probably safe to say that issues regarding immigration has definitely become much more complex, interconnected with everything else. Because of its interconnectivity with other important issues, it has naturally been more heavily addressed in the political arena, making it emerge as a very crucial socio-political question that needs to be raised, addressed, and questioned during this time in history.  
 

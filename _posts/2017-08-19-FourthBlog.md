@@ -15,7 +15,7 @@ In order to topic model across time, I vectorized my documents into a bag of wor
 
 Here are my results for K-means clustering:  
 
-![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/kmeans_cluster.png)
+![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/topic_distr.png)
 
 As you can see, one is able to identify certain topics and themes despite some overlaps. Because K-means just returned me the cluster, I could only look at these articles based on their headlines which were not very informative unless I read through each article one by one and decide whether the algorithm clustered well. That would be practically inefficient and would take too long. Therefore, I decided to take other approaches. After trying out many different things, I eventually went with vectorizing my documents through TFIDF and topic modeling with NMF. NMF can be understood roughly as a matrix decomposition algorithm that decompose a document to word (vocabulary) frequency matrix into two matrices: a document to component matrix and a component to words matrix. Below is a simple visualization of the matrix decomposition. Basically every column in $V$, let us call it $v$, can be understood as the linear combination of the columns of $W$ weighted by $h$, the columns of $H$. The cost function is typically some measure of the Euclidean distance between the estimated and the actual matrix $V$. The update is calculated typically through gradient descent or other numerical estimation methods.  
 

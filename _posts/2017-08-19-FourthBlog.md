@@ -43,25 +43,21 @@ The graph still definitely looks a bit too colorful, but let us walk through thi
 For the keyword category under terrorism and security, this is what we have:  
 
 
-![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/terror.png)
-
+![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/terror.png)  
 
 One sees that there are two time periods that has much news regarding terrorism and security associated with article searches on immigration, namely the late 90s and early 2000s right after 9/11. One sees that some of the keywords returned by the NMF model are names of extremist leaders.  
 
 Another interesting subtopic is the theme on border and boundary:  
-
-
+  
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/border.png)
 
 If you take a close look at the graph, some notable historical events happened during these time periods. On the very left around 1982 is the Latin American debt crisis where many workers then tried to cross the Mexican American border looking for employment in the US. We then have in 1989 the fall of the Berlin Wall. And finally 1994, the ratification of the NAFTA trade agreement. Now you might wonder with all the talks on TV about Donald Trump building a wall these days and the crisis in the Middle east, how is the frequency immigration news related to this subtopic almost nonexistent. I want to argue that it has not disappeared but simply bled into another adjacent topic: asylum and detainment:  
 
-
-![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/terror.png)
+![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/detainment.png)
 
 In the asylum and detainment subtopic we also see the keyword “border” appearing but in a slightly different context. While “border” in the previous subtopic had a more economic and historical connotation, it’s connotation in the latter topic is much more relevant to the state of socio-political affairs we are seeing today in 2017. This is confirmed by much more relevant keywords to what is going on recently with all the refugee crises and Donald Trump’s stringent policies against immigrants and travelers to the US. I think this is a good place to emphasize that topics are often times not mutually exclusive and that it is usually as much an art as it is a science to really discern similarities and differences through keywords, leveraging some domain knowledge and interpretational skills to weave a coherent and probable story together.  
 
 What about geographical subtopics outside of the US? We now take a quick peak at Europe:  
-
 
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/detainment.png)
 
@@ -69,11 +65,9 @@ Here we have an example of a re-emerging subtopic. One can see quite some covera
 
 Nevertheless, a large sum of NYT’s coverage nowadays regarding immigration has some significant political components:  
 
-
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/political.png)
 
 When I say “political”, what I really mean is party politics, especially during the recent election where immigration to the US is a topic heavily touched upon during the presidential debates along with Donald Trump’s victory. The subtopic account for more than 20% of the news related to immigration keywords, almost twice as much coverage as it had in 1980. This shows that immigration has become much more controversial of an issue in the political arena. However, what is perhaps most interesting for me to see is this next subtopic on immigrant life and education.  
-
 
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog4_images/social_response.png)
 

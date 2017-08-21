@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am a recent college graduate from Vassar college with a BA in both philosophy and economics. I enjoy working with empirical data, wrapping my head in awesome codes, and persuing over philosphical text that is rigorous in approach and insightful. Outside of work, I enjoy rock climbing and try to do so on a regular basis.
+I am a recent college graduate from Vassar college with a BA in both philosophy and economics. I enjoy working with empirical data, wrapping my head in awesome codes, and persuing over philosphical texts that are rigorous in approach. Outside of work, I enjoy rock climbing and try to do so on a regular basis.
 
 ### Contact me
 

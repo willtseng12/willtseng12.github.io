@@ -87,5 +87,5 @@ So where do we go from here? A more diverse set of data needs to be collected. I
 do we want more data point for more accurate inference, many of less well known movies are not included because we simply
 have less data on them biasing our data-points toward already-hot releases. 
 
-You can find more technical aspect of my project and my implementations [here](https://github.com/willtseng12/imdb_project)
+You can find more technical aspect of my project and my implementations [here](https://github.com/willtseng12/metis_projects_17/tree/master/imdb_project)
 

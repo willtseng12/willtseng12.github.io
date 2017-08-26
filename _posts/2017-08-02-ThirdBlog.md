@@ -121,4 +121,4 @@ into extracting features through exploratory data analysis. Model selection and 
 well. Some have asked me why I did not try random forest. The answer is that I have, but the classifier had somehow not
 performed better than bootstrap aggregating my decision tree, so I did not include it in my report.
 
-You can see my technical implementations [here]()
+You can see my technical implementations [here](https://github.com/willtseng12/metis_projects_17/tree/master/credit_card_defaults_project)

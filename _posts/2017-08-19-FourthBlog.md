@@ -71,4 +71,4 @@ Although one can definitely spot the presence of political figures in the word c
 
 First thing first, one sees the names of recent political candidates, Trump (bottom right), Mike Pence (top right). Next we see keywords on religious groups such as Islam (bottom left) popping up along with extremist group such as ISIS (right above Trump). In terms of countries, there is China (upper right), Baltic (center top). Economic themes such as the market (bottom left corner) all emerge as interconnected issues in this document specifically. It is probably safe to say that issues regarding immigration has definitely become much more complex, interconnected with everything else. Because of its interconnectivity with other important issues, it has naturally been more heavily addressed in the political arena, making it emerge as a very crucial socio-political question that needs to be raised, addressed, and questioned during this time in history.  
 
-You can see my technical implementations [here]()
+You can see my technical implementations [here](https://github.com/willtseng12/metis_projects_17/tree/master/nyt_immigration_project)

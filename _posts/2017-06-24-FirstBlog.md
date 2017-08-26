@@ -42,6 +42,7 @@ Lastly, we take the analysis to different times of the day in one of my graphs. 
 
 Strategy wise, mid-week afternoon seems to be the way to go for most stations in our list.  Bigger teams to 14th St. Union Sq. and 34th St. Herald Sq. since they are stations that toped both high property value and traffic volume criteria!
 
-We recognize that there are much more we need to do to improve our analysis, most of which involves more time to clean the dataset: from further de-duplicating stations with similar names to handling stations that resets entry counts once in a while (another post about this soon!). But given the time constraints we have, I see it as a good start and look forward to further digging into the data!
+We recognize that there are much more we need to do to improve our analysis, most of which involves more time to clean the dataset: from further de-duplicating stations with similar names to handling observations of stations that resets entry counts once in a while. Given the time constraint, I see it as a good start and learning experience for a first project.
 
+For more details regarding my code and approach, please visit [here](https://github.com/willtseng12/metis_projects_17/tree/master/mta_project)
   

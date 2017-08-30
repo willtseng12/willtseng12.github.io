@@ -9,3 +9,4 @@ I am a recent college graduate from Vassar college with a BA in both philosophy 
 ### Contact me
 
 [contact me](mailto:will.tseng12@gmail.com)
+

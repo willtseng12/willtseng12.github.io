@@ -7,6 +7,11 @@ For this week's Metis project, our team received a hypothetical letter from WTWY
 
 The data which is available freely online [MTA turnstile data](http://web.mta.info/developers/turnstile.html#main-content) consists of the cumulative number of entries and exits for each turnstile in a respective subway station up to a given date and time.
 
+### Coming up with a ranking metric
+
+Before we can provide WTWY with a list of subway stations they should canvass at, we must specify some sort of criteria to 
+evaluate the optimality of each station.
+
 Considering that WTWY’s goal isn’t only to increase social awareness but to fundraise for their upcoming gala event, my teammate Matt suggested us to incorporate outside data (average property value from trulia and average household income from zipatlas) in our optimization process. From there we filtered out areas with property values less than 2 million.
 
 ![test](https://github.com/willtseng12/willtseng12.github.io/raw/master/images/blog1_images/data.png)
